@@ -1,9 +1,7 @@
 package Steps;
 
-import UIPages.ContactsPage;
 import UIPages.LoginPage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 
 public class LoginPageSteps {
@@ -26,8 +24,10 @@ public class LoginPageSteps {
     }
 
     @Step
-    public void navigateToContactsPage(){
-        loginPage.navigateToContactsPage();
+    public void navigateToContactsUsPage(){
+        loginPage.goToContactsUsPage();
     }
+
+
 
 }
