@@ -16,12 +16,10 @@ import Steps.LoginPageSteps;
 import Steps.ContactUsPageSteps;
 
 @RunWith(SerenityRunner.class)
-public class ContactUsTest {
+public class ContactUsTest extends BaseTest{
+
 
     String expMesg = "Your message has been successfully sent to our team.";
-
-    @Managed(uniqueSession = true)
-    WebDriver browser;
 
     @Steps
     LoginPageSteps loginPageSteps;

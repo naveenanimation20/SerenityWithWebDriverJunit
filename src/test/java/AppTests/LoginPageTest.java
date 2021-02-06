@@ -10,13 +10,11 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class LoginPageTest {
+public class LoginPageTest extends BaseTest{
+
 
     @Steps
     LoginPageSteps loginPageSteps;
-
-    @Managed()
-    WebDriver browser;
 
     @Title("Login test with correct data")
     @Test

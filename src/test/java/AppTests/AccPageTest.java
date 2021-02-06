@@ -2,6 +2,7 @@ package AppTests;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,16 +13,13 @@ import Steps.AccPageSteps;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class AccPageTest {
+public class AccPageTest extends BaseTest{
 
     @Steps
     LoginPageSteps loginPageSteps;
 
     @Steps
     AccPageSteps accPageSteps;
-
-    @Managed()
-    WebDriver browser;
 
     @Before
     public void setup(){
@@ -44,5 +42,25 @@ public class AccPageTest {
     public void accPageTitleTest(){
        Assert.assertTrue(accPageSteps.getAccPageTitle().equals("My account - My Store"));
     }
+
+    @Pending
+    @Test
+    public void accPageOrderHistoryTest(){
+
+    }
+
+    @Pending
+    @Test
+    public void accPageWishListTest(){
+
+    }
+
+    @Pending
+    @Test
+    public void accPageMyAddressTest(){
+
+    }
+
+
 
 }
